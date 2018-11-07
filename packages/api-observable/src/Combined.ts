@@ -261,6 +261,18 @@ export default class ApiCombined extends ApiCalls {
     );
   }
 
+  // FIXME - add specific type for PendingExtrinsics
+  pendingExtrinsics = (): Observable<any> => {
+    return this.combine(
+      [
+        this.pendingExtrinsics()
+      ],
+      // FIXME - add specific type for PendingExtrinsics
+      ([pendingExtrinsics]: [any]): any =>
+        pendingExtrinsics
+    );
+  }
+
   sessionBlockProgress = (): Observable<BlockNumber | undefined> => {
     return this.combine(
       [

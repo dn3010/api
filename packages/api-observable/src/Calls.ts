@@ -44,6 +44,11 @@ export default class ApiCalls extends ApiQueries {
     return this._api.system.version();
   }
 
+  // FIXME - add specific type for PendingExtrinsics
+  pendingExtrinsics = (): Observable<any> => {
+    return this._api.author.pendingExtrinsics();
+  }
+
   submitExtrinsic = (extrinsic: Extrinsic): Observable<Hash | undefined> => {
     return this._api.author.submitExtrinsic(extrinsic);
   }
