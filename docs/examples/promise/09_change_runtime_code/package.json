@@ -1,6 +1,6 @@
 {
   "name": "09_change_runtime_code",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Example showing how to change the runtime code using ApiPromise",
   "main": "index.js",
   "author": "ltfschoen",
@@ -10,8 +10,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@polkadot/api": "^0.31.82",
-    "@polkadot/rpc-provider": "^0.31.82"
+    "@polkadot/api": "^0.32.15",
+    "@polkadot/rpc-provider": "^0.32.15",
+    "@polkadot/util": "^0.33.3",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "rimraf": "2.6.2"

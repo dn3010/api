@@ -1,6 +1,6 @@
 {
   "name": "10_deploy_smart_contract",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Example showing how to deploy a smart contract using ApiPromise",
   "main": "index.js",
   "author": "ltfschoen",
@@ -10,11 +10,11 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@polkadot/api": "^0.31.82",
-    "@polkadot/rpc-provider": "^0.31.82",
+    "@polkadot/api": "^0.32.15",
+    "@polkadot/rpc-provider": "^0.32.15",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "rimraf": "2.6.2"
+    "rimraf": "^2.6.2"
   }
 }

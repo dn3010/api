@@ -6,7 +6,6 @@ const { WsProvider } = require('@polkadot/rpc-provider');
 const wsProvider = new WsProvider('ws://127.0.0.1:9944');
 
 // Known account we want to use (available on dev chain, with funds)
-// FIXME: How are we associating Alice's account with funding the contract creation
 const Alice = '5GoKvZWG5ZPYL1WUovuHW3zJBWBP5eT8CbqjdRY4Q6iMaDtZ';
 
 async function main () {
@@ -20,13 +19,12 @@ async function main () {
   const api = await ApiPromise.create(wsProvider);
 
   // Create Smart Contract
-  let chainDeploymentHash = await api.tx.contract.create(contractValue, gasLimit, initCode, data);
+  const chainDeploymentHash = await api.tx.contract.create(contractValue, gasLimit, initCode, data);
   console.log(`Contract deployed for Alice: ${chainDeploymentHash}`);
 
   // Retrieve Smart Contract
-  // FIXME: Error: Method: cannot decode value ""0x2001000310deadbeef"".
-  // let contractRetrievedHash = await api.tx.contract.call(Alice, contractValue, gasLimit, data);
-  // console.log(`Retrieved hash of smart contract deployed by Alice:: ${contractRetrievedHash}`);
+  const contractRetrievedHash = await api.tx.contract.call(Alice, contractValue, gasLimit, data);
+  console.log(`Retrieved hash of smart contract deployed by Alice:: ${contractRetrievedHash}`);
 }
 
 main().catch(console.error).finally(_ => process.exit());
