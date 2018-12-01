@@ -10,15 +10,9 @@
     "start": "node index.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@polkadot/api": "^0.31.82",
-    "@polkadot/keyring": "^0.32.10",
-    "@polkadot/util": "^0.32.10"
-=======
-    "@polkadot/api": "^0.31.82"
->>>>>>> master
+    "@polkadot/api": "^0.32.15"
   },
   "devDependencies": {
-    "rimraf": "2.6.2"
+    "rimraf": "^2.6.2"
   }
 }

@@ -22,6 +22,7 @@
   - [Listen to balance change](examples/promise/03_listen_to_balance_change/README.md)
   - [Read chain state](examples/promise/05_read_storage/README.md)
   - [Make a transfer](examples/promise/07_transfer_dots/README.md)
+  - [Display system events](examples/promise/08_system_events/README.md)
   - [Change runtime code](examples/promise/09_change_runtime_code/README.md)
   - [Deploy smart contract](examples/promise/10_deploy_smart_contract/README.md)
 - [ApiRx](examples/rx/README.md)
@@ -30,4 +31,5 @@
   - [Listen to balance change](examples/rx/03_listen_to_balance_change/README.md)
   - [Read chain state](examples/rx/05_read_storage/README.md)
   - [Make a transfer](examples/rx/07_transfer_dots/README.md)
+  - [Change runtime code](examples/rx/09_change_runtime_code/README.md)
   - [Deploy smart contract](examples/rx/10_deploy_smart_contract/README.md)
