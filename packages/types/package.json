@@ -1,5 +1,5 @@
 {
-  "name": "@polkadot/types",
+  "name": "@sylo/polkadot-types",
   "version": "0.48.1",
   "description": "Implementation of the Parity codec",
   "main": "index.js",
