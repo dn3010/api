@@ -3,9 +3,9 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { Observable, from } from 'rxjs';
-import ApiRx from '@polkadot/api/rx/Api';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import MockProvider from '@polkadot/rpc-provider/mock';
+import ApiRx from '@sylo/polkadot-api/rx/Api';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import MockProvider from '@sylo/polkadot-rpc-provider/mock';
 
 import { Derive } from '.';
 

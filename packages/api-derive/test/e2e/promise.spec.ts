@@ -2,9 +2,9 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import ApiPromise from '@polkadot/api/promise/Api';
-import { BlockNumber } from '@polkadot/types';
-import { WsProvider } from '@polkadot/rpc-provider';
+import ApiPromise from '@sylo/polkadot-api/promise/Api';
+import { BlockNumber } from '@sylo/polkadot-types';
+import { WsProvider } from '@sylo/polkadot-rpc-provider';
 
 const WS_LOCAL = 'ws://127.0.0.1:9944/';
 // const WS_POC3 = 'wss://poc3-rpc.polkadot.io/';

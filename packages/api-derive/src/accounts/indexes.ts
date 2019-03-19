@@ -4,9 +4,9 @@
 
 import { combineLatest, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { ENUMSET_SIZE } from '@polkadot/types/type/AccountIndex';
-import { AccountId, AccountIndex } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { ENUMSET_SIZE } from '@sylo/polkadot-types/type/AccountIndex';
+import { AccountId, AccountIndex } from '@sylo/polkadot-types';
 
 import { drr } from '../util/drr';
 

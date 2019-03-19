@@ -3,8 +3,8 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { KeyringPair } from '@polkadot/keyring/types';
-import { AccountId, Address, ExtrinsicStatus, EventRecord, getTypeRegistry, Hash, Index, Method, SignedBlock, Struct, Text, Vector } from '@polkadot/types';
-import { Codec, CodecCallback, IExtrinsic, SignatureOptions } from '@polkadot/types/types';
+import { AccountId, Address, ExtrinsicStatus, EventRecord, getTypeRegistry, Hash, Index, Method, SignedBlock, Struct, Text, Vector } from '@sylo/polkadot-types';
+import { Codec, CodecCallback, IExtrinsic, SignatureOptions } from '@sylo/polkadot-types/types';
 import { ApiInterface$Rx, ApiType, OnCallDefinition, Signer } from './types';
 
 import { Observable, of, combineLatest } from 'rxjs';

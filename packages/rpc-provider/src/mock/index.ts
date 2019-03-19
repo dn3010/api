@@ -7,12 +7,12 @@ import { MockState$Subscriptions, MockState$Subscription$Callback, MockState$Db 
 
 import BN from 'bn.js';
 import EventEmitter from 'eventemitter3';
-import interfaces from '@polkadot/jsonrpc';
+import interfaces from '@sylo/polkadot-jsonrpc';
 import testKeyring from '@polkadot/keyring/testing';
-import storage from '@polkadot/storage/static';
-import { Codec } from '@polkadot/types/types';
-import metadata from '@polkadot/types/Metadata/v0/static';
-import { Header } from '@polkadot/types';
+import storage from '@sylo/polkadot-storage/static';
+import { Codec } from '@sylo/polkadot-types/types';
+import metadata from '@sylo/polkadot-types/Metadata/v0/static';
+import { Header } from '@sylo/polkadot-types';
 import { bnToU8a, logger, u8aToHex } from '@polkadot/util';
 import { randomAsU8a } from '@polkadot/util-crypto';
 

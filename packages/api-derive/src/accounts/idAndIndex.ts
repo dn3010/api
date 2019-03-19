@@ -4,9 +4,9 @@
 
 import { Observable, of } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
 import { decodeAddress } from '@polkadot/keyring';
-import { AccountId, AccountIndex, Address } from '@polkadot/types';
+import { AccountId, AccountIndex, Address } from '@sylo/polkadot-types';
 import { isU8a } from '@polkadot/util';
 
 import { idToIndex } from './idToIndex';

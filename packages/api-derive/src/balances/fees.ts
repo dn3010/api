@@ -4,7 +4,7 @@
 
 import { Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
 
 import BN from 'bn.js';
 import { DerivedFees } from '../types';

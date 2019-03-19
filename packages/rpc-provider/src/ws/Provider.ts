@@ -48,8 +48,8 @@ const l = logger('api-ws');
  * <BR>
  *
  * ```javascript
- * import Api from '@polkadot/api/promise';
- * import WsProvider from '@polkadot/rpc-provider/ws';
+ * import Api from '@sylo/polkadot-api/promise';
+ * import WsProvider from '@sylo/polkadot-rpc-provider/ws';
  *
  * const provider = new WsProvider('ws://127.0.0.1:9944');
  * const api = new Api(provider);

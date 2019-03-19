@@ -2,9 +2,9 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { FunctionMetadata } from '@polkadot/types/Metadata/v0/Modules';
-import { MethodFunction } from '@polkadot/types/primitive/Method';
-import { Method } from '@polkadot/types';
+import { FunctionMetadata } from '@sylo/polkadot-types/Metadata/v0/Modules';
+import { MethodFunction } from '@sylo/polkadot-types/primitive/Method';
+import { Method } from '@sylo/polkadot-types';
 import { assert } from '@polkadot/util';
 
 /**

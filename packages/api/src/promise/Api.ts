@@ -2,8 +2,8 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { ProviderInterface } from '@polkadot/rpc-provider/types';
-import { CodecArg, CodecCallback } from '@polkadot/types/types';
+import { ProviderInterface } from '@sylo/polkadot-rpc-provider/types';
+import { CodecArg, CodecCallback } from '@sylo/polkadot-types/types';
 import { RxResult } from '../rx/types';
 import { ApiOptions, OnCallFunction } from '../types';
 import { ApiPromiseInterface, CodecResult, SubscriptionResult } from './types';
@@ -35,7 +35,7 @@ import Combinator, { CombinatorCallback, CombinatorFunction } from './Combinator
  * <BR>
  *
  * ```javascript
- * import ApiPromise from '@polkadot/api/promise';
+ * import ApiPromise from '@sylo/polkadot-api/promise';
  *
  * // initialise via static create
  * const api = await ApiPromise.create();
@@ -51,7 +51,7 @@ import Combinator, { CombinatorCallback, CombinatorFunction } from './Combinator
  * <BR>
  *
  * ```javascript
- * import { ApiPromise, WsProvider } from '@polkadot/api';
+ * import { ApiPromise, WsProvider } from '@sylo/polkadot-api';
  *
  * // initialise a provider with a specific endpoint
  * const provider = new WsProvider('wss://example.com:9944')
@@ -79,7 +79,7 @@ import Combinator, { CombinatorCallback, CombinatorFunction } from './Combinator
  * <BR>
  *
  * ```javascript
- * import ApiPromise from '@polkadot/api/promise';
+ * import ApiPromise from '@sylo/polkadot-api/promise';
  *
  * ApiPromise.create().then((api) => {
  *   const nonce = await api.query.system.accountNonce(keyring.alice.address());
@@ -113,7 +113,7 @@ export default class ApiPromise extends ApiBase<CodecResult, SubscriptionResult>
    * <BR>
    *
    * ```javascript
-   * import Api from '@polkadot/api/promise';
+   * import Api from '@sylo/polkadot-api/promise';
    *
    * Api.create().then(async (api) => {
    *   const timestamp = await api.query.timestamp.now();
@@ -136,7 +136,7 @@ export default class ApiPromise extends ApiBase<CodecResult, SubscriptionResult>
    * <BR>
    *
    * ```javascript
-   * import Api from '@polkadot/api/promise';
+   * import Api from '@sylo/polkadot-api/promise';
    *
    * new Api().isReady.then((api) => {
    *   api.rpc.subscribeNewHead((header) => {

@@ -4,8 +4,8 @@
 
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { BlockNumber, Header } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { BlockNumber, Header } from '@sylo/polkadot-types';
 
 import { drr } from '../util/drr';
 

@@ -2,14 +2,14 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { ProviderInterface, ProviderInterface$Callback } from '@polkadot/rpc-provider/types';
-import { RpcSection, RpcMethod } from '@polkadot/jsonrpc/types';
+import { ProviderInterface, ProviderInterface$Callback } from '@sylo/polkadot-rpc-provider/types';
+import { RpcSection, RpcMethod } from '@sylo/polkadot-jsonrpc/types';
 import { RpcInterface, RpcInterface$Method, RpcInterface$Section } from './types';
 
-import interfaces from '@polkadot/jsonrpc';
-import { WsProvider } from '@polkadot/rpc-provider';
-import { Codec } from '@polkadot/types/types';
-import { Option, StorageChangeSet, StorageKey, Vector, createClass, createType } from '@polkadot/types';
+import interfaces from '@sylo/polkadot-jsonrpc';
+import { WsProvider } from '@sylo/polkadot-rpc-provider';
+import { Codec } from '@sylo/polkadot-types/types';
+import { Option, StorageChangeSet, StorageKey, Vector, createClass, createType } from '@sylo/polkadot-types';
 import { ExtError, assert, isFunction, isNull, logger } from '@polkadot/util';
 
 const l = logger('rpc-core');
@@ -30,8 +30,8 @@ const l = logger('rpc-core');
  * <BR>
  *
  * ```javascript
- * import Api from '@polkadot/rpc-core';
- * import WsProvider from '@polkadot/rpc-provider/ws';
+ * import Api from '@sylo/polkadot-rpc-core';
+ * import WsProvider from '@sylo/polkadot-rpc-provider/ws';
  *
  * const provider = new WsProvider('ws://127.0.0.1:9944');
  * const api = new Api(provider);
@@ -70,7 +70,7 @@ export default class Rpc implements RpcInterface {
    * <BR>
    *
    * ```javascript
-   * import Api from '@polkadot/rpc-core';
+   * import Api from '@sylo/polkadot-rpc-core';
    *
    * Api.signature({ name: 'test_method', params: [ { name: 'dest', type: 'Address' } ], type: 'Address' }); // => test_method (dest: Address): Address
    * ```

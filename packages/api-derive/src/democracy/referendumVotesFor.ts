@@ -5,8 +5,8 @@
 import BN from 'bn.js';
 import { combineLatest, Observable, of } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { AccountId, Balance, Vector, Vote } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { AccountId, Balance, Vector, Vote } from '@sylo/polkadot-types';
 
 import { DerivedReferendumVote } from '../types';
 import { drr } from '../util/drr';

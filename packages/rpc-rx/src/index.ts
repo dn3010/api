@@ -2,14 +2,14 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { RpcInterface$Method, RpcInterface$Section } from '@polkadot/rpc-core/types';
-import { ProviderInterface } from '@polkadot/rpc-provider/types';
+import { RpcInterface$Method, RpcInterface$Section } from '@sylo/polkadot-rpc-core/types';
+import { ProviderInterface } from '@sylo/polkadot-rpc-provider/types';
 import { RpcRxInterface, RpcRxInterface$Events, RpcRxInterface$Method, RpcRxInterface$Section } from './types';
 
 import EventEmitter from 'eventemitter3';
 import memoize, { Memoized } from 'memoizee';
 import { BehaviorSubject, Observable, from, Observer } from 'rxjs';
-import Rpc from '@polkadot/rpc-core';
+import Rpc from '@sylo/polkadot-rpc-core';
 import { map, publishReplay, refCount } from 'rxjs/operators';
 import { isFunction, isUndefined } from '@polkadot/util';
 
@@ -22,8 +22,8 @@ import { isFunction, isUndefined } from '@polkadot/util';
  * <BR>
  *
  * ```javascript
- * import RpcRx from '@polkadot/rpc-rx';
- * import WsProvider from '@polkadot/rpc-provider/ws';
+ * import RpcRx from '@sylo/polkadot-rpc-rx';
+ * import WsProvider from '@sylo/polkadot-rpc-provider/ws';
  *
  * const provider = new WsProvider('http://127.0.0.1:9944');
  * const api = new RpcRx(provider);

@@ -1,6 +1,6 @@
 {
   "name": "@sylo/polkadot-rpc-rx",
-  "version": "0.48.1",
+  "version": "0.48.2",
   "description": "An RxJs wrapper around the Polkadot JS API",
   "main": "index.js",
   "keywords": [

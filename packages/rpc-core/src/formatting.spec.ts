@@ -3,7 +3,7 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import BN from 'bn.js';
-import storage from '@polkadot/storage/static';
+import storage from '@sylo/polkadot-storage/static';
 
 import Api from '.';
 

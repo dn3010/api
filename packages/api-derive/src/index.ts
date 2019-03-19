@@ -3,7 +3,7 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { Observable } from 'rxjs';
-import { ApiInterface$Rx } from '@polkadot/api/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
 
 import * as accounts from './accounts';
 import * as balances from './balances';

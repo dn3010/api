@@ -1,6 +1,6 @@
 {
   "name": "@sylo/polkadot-rpc-core",
-  "version": "0.48.2",
+  "version": "0.48.3",
   "description": "A JavaScript wrapper for the Polkadot JsonRPC interface",
   "main": "index.js",
   "keywords": [

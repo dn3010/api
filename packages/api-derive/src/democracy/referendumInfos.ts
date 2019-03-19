@@ -4,8 +4,8 @@
 
 import BN from 'bn.js';
 import { combineLatest, Observable, of } from 'rxjs';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { Option } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { Option } from '@sylo/polkadot-types';
 
 import { drr } from '../util/drr';
 import { referendumInfo, ReferendumInfoExtended } from './referendumInfo';

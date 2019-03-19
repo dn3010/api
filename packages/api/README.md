@@ -37,7 +37,7 @@ npm install --save @polkadot/api
 Subscribing to blocks via Promise-based API -
 
 ```javascript
-import { ApiPromise } from '@polkadot/api';
+import { ApiPromise } from '@sylo/polkadot-api';
 
 // initialise via static create
 const api = await ApiPromise.create();
@@ -51,7 +51,7 @@ api.rpc.chain.subscribeNewHead((header) => {
 Subscribing to blocks via RxJS-based API -
 
 ```javascript
-import { ApiRx } from '@polkadot/api';
+import { ApiRx } from '@sylo/polkadot-api';
 
 // initialise via static create
 const api = await ApiRx.create().toPromise();
@@ -67,7 +67,7 @@ api.rpc.chain.subscribeNewHead().subscribe((header) => {
 Additional types used by runtime modules can be added when a new instance of the API is created. This is necessary if the runtime modules use types which are not available in the base Substrate runtime.
 
 ```javascript
-import { ApiPromise } from '@polkadot/api';
+import { ApiPromise } from '@sylo/polkadot-api';
 
 // initialise via static create and register custom types
 const api = await ApiPromise.create({

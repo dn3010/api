@@ -4,8 +4,8 @@
 
 import { combineLatest, of, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { AccountId, AccountIndex, Address, Balance } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { AccountId, AccountIndex, Address, Balance } from '@sylo/polkadot-types';
 
 import { idAndIndex } from '../accounts/idAndIndex';
 import { DerivedBalances } from '../types';

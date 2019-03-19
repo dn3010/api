@@ -3,10 +3,10 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import BN from 'bn.js';
-import ApiRx from '@polkadot/api/rx/Api';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { BlockNumber } from '@polkadot/types';
-import { WsProvider } from '@polkadot/rpc-provider';
+import ApiRx from '@sylo/polkadot-api/rx/Api';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { BlockNumber } from '@sylo/polkadot-types';
+import { WsProvider } from '@sylo/polkadot-rpc-provider';
 
 const WS_LOCAL = 'ws://127.0.0.1:9944/';
 // const WS_POC3 = 'wss://poc3-rpc.polkadot.io/';

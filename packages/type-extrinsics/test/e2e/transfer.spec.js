@@ -2,8 +2,8 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import Rpc from '@polkadot/rpc-core';
-import Ws from '@polkadot/rpc-provider/ws';
+import Rpc from '@sylo/polkadot-rpc-core';
+import Ws from '@sylo/polkadot-rpc-provider/ws';
 import testingPairs from '@polkadot/keyring/testingPairs';
 
 import extrinsics from '../../src/static';

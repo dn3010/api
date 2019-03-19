@@ -13,8 +13,8 @@ yarn add @polkadot/rpc-core
 Initialisation -
 
 ```js
-import Rpc from '@polkadot/rpc-core';
-import WsProvider from '@polkadot/rpc-provider/ws';
+import Rpc from '@sylo/polkadot-rpc-core';
+import WsProvider from '@sylo/polkadot-rpc-provider/ws';
 
 const provider = new WsProvider('http://127.0.0.1:9944');
 const api = new Rpc(provider);

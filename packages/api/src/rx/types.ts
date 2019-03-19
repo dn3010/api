@@ -3,7 +3,7 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { Observable } from 'rxjs';
-import { Codec } from '@polkadot/types/types';
+import { Codec } from '@sylo/polkadot-types/types';
 
 import ApiBase from '../Base';
 

@@ -2,7 +2,7 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { Codec } from '@polkadot/types/types';
+import { Codec } from '@sylo/polkadot-types/types';
 import { QueryableStorageFunction as QueryableStorageFunctionBase, SubmittableExtrinsicFunction as SubmittableExtrinsicFunctionBase } from '../types';
 
 import ApiBase from '../Base';

@@ -3,8 +3,8 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { combineLatest, Observable, of } from 'rxjs';
-import { ApiInterface$Rx } from '@polkadot/api/types';
-import { AccountId, AccountIndex, Address } from '@polkadot/types';
+import { ApiInterface$Rx } from '@sylo/polkadot-api/types';
+import { AccountId, AccountIndex, Address } from '@sylo/polkadot-types';
 
 import { DerivedBalances } from '../types';
 import { drr } from '../util/drr';

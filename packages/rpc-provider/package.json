@@ -1,6 +1,6 @@
 {
   "name": "@sylo/polkadot-rpc-provider",
-  "version": "0.48.3",
+  "version": "0.48.4",
   "description": "Transport providers for the API",
   "main": "index.js",
   "keywords": [

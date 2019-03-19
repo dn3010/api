@@ -26,8 +26,8 @@ const l = logger('api-http');
  * <BR>
  *
  * ```javascript
- * import Api from '@polkadot/api/promise';
- * import HttpProvider from '@polkadot/rpc-provider/http';
+ * import Api from '@sylo/polkadot-api/promise';
+ * import HttpProvider from '@sylo/polkadot-rpc-provider/http';
  *
  * const provider = new HttpProvider('http://127.0.0.1:9933');
  * const api = new Api(provider);

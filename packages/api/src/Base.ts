@@ -2,9 +2,9 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { ProviderInterface } from '@polkadot/rpc-provider/types';
-import { Storage } from '@polkadot/storage/types';
-import { Codec, CodecArg, CodecCallback, RegistryTypes } from '@polkadot/types/types';
+import { ProviderInterface } from '@sylo/polkadot-rpc-provider/types';
+import { Storage } from '@sylo/polkadot-storage/types';
+import { Codec, CodecArg, CodecCallback, RegistryTypes } from '@sylo/polkadot-types/types';
 import { RxResult } from './rx/types';
 import {
   ApiBaseInterface, ApiInterface$Rx, ApiInterface$Events, ApiOptions, ApiType,
@@ -18,14 +18,14 @@ import {
 
 import EventEmitter from 'eventemitter3';
 import { map } from 'rxjs/operators';
-import decorateDerive, { Derive as DeriveInterface } from '@polkadot/api-derive';
-import extrinsicsFromMeta from '@polkadot/extrinsics/fromMetadata';
-import RpcBase from '@polkadot/rpc-core';
-import RpcRx from '@polkadot/rpc-rx';
-import storageFromMeta from '@polkadot/storage/fromMetadata';
-import { Event, getTypeRegistry, Hash, Metadata, Method, RuntimeVersion } from '@polkadot/types';
-import { MethodFunction, ModulesWithMethods } from '@polkadot/types/primitive/Method';
-import { StorageFunction } from '@polkadot/types/primitive/StorageKey';
+import decorateDerive, { Derive as DeriveInterface } from '@sylo/polkadot-api-derive';
+import extrinsicsFromMeta from '@sylo/polkadot-extrinsics/fromMetadata';
+import RpcBase from '@sylo/polkadot-rpc-core';
+import RpcRx from '@sylo/polkadot-rpc-rx';
+import storageFromMeta from '@sylo/polkadot-storage/fromMetadata';
+import { Event, getTypeRegistry, Hash, Metadata, Method, RuntimeVersion } from '@sylo/polkadot-types';
+import { MethodFunction, ModulesWithMethods } from '@sylo/polkadot-types/primitive/Method';
+import { StorageFunction } from '@sylo/polkadot-types/primitive/StorageKey';
 import { assert, compactStripLength, isFunction, isObject, isUndefined, logger, u8aToHex } from '@polkadot/util';
 import { cryptoWaitReady } from '@polkadot/util-crypto';
 
@@ -89,7 +89,7 @@ export default abstract class ApiBase<CodecResult, SubscriptionResult> implement
    * <BR>
    *
    * ```javascript
-   * import Api from '@polkadot/api/promise';
+   * import Api from '@sylo/polkadot-api/promise';
    *
    * const api = new Api().isReady();
    *

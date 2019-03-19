@@ -4,7 +4,7 @@
 
 import { Constructor } from './types';
 
-import extrinsics from '@polkadot/extrinsics/static';
+import extrinsics from '@sylo/polkadot-extrinsics/static';
 
 import * as Classes from './index.types';
 

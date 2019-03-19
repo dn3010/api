@@ -2,9 +2,9 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { StorageFunctionMetadata } from '@polkadot/types/Metadata/v0/Modules';
-import { StorageFunction } from '@polkadot/types/primitive/StorageKey';
-import { Compact, Text, createType } from '@polkadot/types';
+import { StorageFunctionMetadata } from '@sylo/polkadot-types/Metadata/v0/Modules';
+import { StorageFunction } from '@sylo/polkadot-types/primitive/StorageKey';
+import { Compact, Text, createType } from '@sylo/polkadot-types';
 import { assert, isNull, isUndefined, stringLowerFirst, stringToU8a, u8aConcat } from '@polkadot/util';
 import { xxhashAsU8a } from '@polkadot/util-crypto';
 

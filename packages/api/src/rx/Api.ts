@@ -2,8 +2,8 @@
 // This software may be modified and distributed under the terms
 // of the Apache-2.0 license. See the LICENSE file for details.
 
-import { ProviderInterface } from '@polkadot/rpc-provider/types';
-import { CodecArg } from '@polkadot/types/types';
+import { ProviderInterface } from '@sylo/polkadot-rpc-provider/types';
+import { CodecArg } from '@sylo/polkadot-types/types';
 import { ApiRxInterface, RxResult } from './types';
 import { ApiOptions, OnCallFunction } from '../types';
 
@@ -31,7 +31,7 @@ import ApiBase from '../Base';
  * <BR>
  *
  * ```javascript
- * import ApiRx from '@polkadot/api/rx';
+ * import ApiRx from '@sylo/polkadot-api/rx';
  *
  * // initialise via Promise & static create
  * const api = await ApiRx.create().toPromise();
@@ -49,7 +49,7 @@ import ApiBase from '../Base';
  * ```javascript
  * import { combineLatest } from 'rxjs';
  * import { pairwise, switchMap } from 'rxjs/operators';
- * import { ApiRx, WsProvider } from '@polkadot/api';
+ * import { ApiRx, WsProvider } from '@sylo/polkadot-api';
  *
  *
  * // initialise a provider with a specific endpoint
@@ -78,7 +78,7 @@ import ApiBase from '../Base';
  *
  * ```javascript
  * import { first, switchMap } from 'rxjs/operators';
- * import ApiRx from '@polkadot/api/rx';
+ * import ApiRx from '@sylo/polkadot-api/rx';
  *
  * // import the test keyring (already has dev keys for Alice, Bob, Charlie, Eve & Ferdie)
  * import testingPairs from '@polkadot/keyring/testingPairs';
@@ -124,7 +124,7 @@ export default class ApiRx extends ApiBase<RxResult, RxResult> implements ApiRxI
    *
    * ```javascript
    * import { switchMap } from 'rxjs/operators';
-   * import Api from '@polkadot/api/rx';
+   * import Api from '@sylo/polkadot-api/rx';
    *
    * Api.create()
    *   .pipe(
@@ -150,7 +150,7 @@ export default class ApiRx extends ApiBase<RxResult, RxResult> implements ApiRxI
    *
    * ```javascript
    * import { switchMap } from 'rxjs/operators';
-   * import Api from '@polkadot/api/rx';
+   * import Api from '@sylo/polkadot-api/rx';
    *
    * new Api().isReady
    *   .pipe(
